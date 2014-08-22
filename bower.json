@@ -1,0 +1,25 @@
+{
+  "name": "Phonegap-base",
+  "authors": [
+    "Marat Fakhreev <marat.fakhreev@gmail.com>"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.1",
+    "marionette": "~2.1.0",
+    "requirejs": "~2.1.14",
+    "backbone-route-filter": "~0.1.1",
+    "backbone.stickit": "~0.8.0",
+    "backbone-validation": "~0.9.1",
+    "backbone-nested-model": "~2.0.1",
+    "backbone.hammer": "~1.0.1",
+    "topcoat": "~0.8.0",
+    "almond": "~0.2.9",
+    "moment": "~2.7.0",
+    "moment-timezone": "~0.1.0",
+    "fontawesome": "~4.1.0",
+    "spinjs": "~2.0.1"
+  },
+  "resolutions": {
+    "jquery": "~2.1.1"
+  }
+}

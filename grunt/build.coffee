@@ -1,0 +1,47 @@
+module.exports = (grunt) ->
+  grunt.registerTask 'build', (target) ->
+    if target is 'development'
+      grunt.task.run [
+        'shell:install'
+        'clean:development'
+        'copy:development'
+        'jade:development'
+        'jade:jst'
+        'stylus:development'
+        'coffee:development'
+        'coffeelint:development'
+        'jsonlint:development'
+        'replace:local'
+      ]
+    if target is 'staging'
+      grunt.task.run [
+        'shell:install'
+        'clean:development'
+        'copy:development'
+        'jade:production'
+        'jade:jst'
+        'stylus:development'
+        'coffee:development'
+        'coffeelint:development'
+        'jsonlint:development'
+        'replace:staging'
+        'cssmin:production'
+        'requirejs:production'
+        'clean:production'
+      ]
+    else if target is 'production'
+      grunt.task.run [
+        'shell:install'
+        'clean:development'
+        'copy:development'
+        'jade:production'
+        'jade:jst'
+        'stylus:development'
+        'coffee:development'
+        'coffeelint:development'
+        'jsonlint:development'
+        'replace:production'
+        'cssmin:production'
+        'requirejs:production'
+        'clean:production'
+      ]

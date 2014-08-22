@@ -1,0 +1,35 @@
+{
+  "name": "phonegap-base",
+  "authors": [
+    "Marat Fakhreev <marat.fakhreev@gmail.com>"
+  ],
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-contrib-requirejs": "~0.4.4",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-contrib-coffee": "~0.7.0",
+    "grunt-contrib-copy": "~0.5.0",
+    "grunt-contrib-connect": "~0.6.0",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-contrib-jade": "~0.9.1",
+    "grunt-contrib-stylus": "~0.12.0",
+    "grunt-contrib-cssmin": "~0.8.0",
+    "grunt-replace": "~0.7.8",
+    "grunt-easymock": "~0.1.0",
+    "grunt-coffeelint": "~0.0.10",
+    "grunt-jsonlint": "~1.0.4",
+    "grunt-shell": "~0.6.4",
+    "grunt-notify": "~0.2.20",
+    "grunt-karma": "~0.8.3",
+    "load-grunt-config": "~0.7.2",
+    "autoprefixer-stylus": "~0.1.0",
+    "requirejs": "~2.1.14",
+    "karma": "~0.12.16",
+    "karma-jasmine": "~0.2.0",
+    "karma-sinon": "~1.0.3",
+    "karma-phantomjs-launcher": "~0.1.4",
+    "karma-requirejs": "~0.2.2",
+    "karma-coffee-preprocessor": "~0.2.1",
+    "jeet": "~5.3.0"
+  }
+}
