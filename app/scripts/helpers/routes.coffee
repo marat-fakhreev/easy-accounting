@@ -2,4 +2,6 @@ define ->
 
   class RoutesHelper
     @rootPath: -> '#'
-    @somelink: -> '#some_link'
+    @allReports: -> '#all_reports'
+    @createReport: -> '#create_report'
+    @createTemplate: -> '#create_template'

@@ -7,7 +7,8 @@ define [
   'views/layouts/layout'
   'views/layouts/header'
   'views/layouts/navigation'
-  'views/layouts/landing'
+  'views/layouts/all_reports'
+  'views/layouts/create_report'
   'views/login/login_view'
 ], (
   Marionette
@@ -18,7 +19,8 @@ define [
   Layout
   HeaderLayout
   NavigationLayout
-  LandingLayout
+  AllReportsLayout
+  CreateReport
   LoginView
 ) ->
 
@@ -41,14 +43,20 @@ define [
 
     root: ->
       if Session.isLoggedIn()
-        Vent.trigger('title:change', 'Landing')
-        @layout.mainRegion.show(new LandingLayout)
+        Vent.trigger('title:change', 'Reports')
+        @layout.mainRegion.show(new AllReportsLayout)
       else
-        Vent.trigger('title:change', 'Phonegap-base')
+        Vent.trigger('title:change', 'EasyAccounting')
         @layout.mainRegion.show(new LoginView)
 
       Spinner.hide()
 
-    someLink: ->
-      Vent.trigger('title:change', 'Other Screen')
+    createReport: ->
+      Vent.trigger('title:change', 'Create Report')
+      @layout.mainRegion.show(new CreateReport)
+      Spinner.hide()
+
+    createTemplate: ->
+      Vent.trigger('title:change', 'Create Template')
+      @layout.mainRegion.empty()
       Spinner.hide()

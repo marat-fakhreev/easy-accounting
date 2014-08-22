@@ -8,7 +8,9 @@ define [
   class AppRouter extends Marionette.AppRouter
     appRoutes:
       '': 'root'
-      'some_link': 'someLink'
+      'all_reports': 'root'
+      'create_report': 'createReport'
+      'create_template': 'createTemplate'
 
     before:
       '(*path)': 'onBeforeRoute'
