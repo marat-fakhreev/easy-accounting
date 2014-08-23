@@ -1,4 +1,4 @@
-# Phonegap-base application
+# EasyAccounting
 
 ## Prepare environment
 
