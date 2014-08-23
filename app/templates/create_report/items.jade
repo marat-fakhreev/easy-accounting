@@ -1,0 +1,13 @@
+each value, key in items
+  li.topcoat-list__item
+    div(class='child-item key') #{key}
+
+    div(class='child-item value')
+      if value === false
+        label(class='topcoat-switch')
+          input(type='checkbox' class='topcoat-switch__input' data-type='boolean' data-item='items.#{key}')
+          .topcoat-switch__toggle
+      else if value === 0
+        input(type='text' class='topcoat-text-input' data-type='integer' data-item='items.#{key}' placeholder='count')
+      else if value === ''
+        input(type='text' class='topcoat-text-input'  data-type='string' data-item='items.#{key}' placeholder='text')

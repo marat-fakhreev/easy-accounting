@@ -9,11 +9,14 @@ define [
     url: "#{Settings.getUrl()}/user_tokens"
 
     defaults:
-      'username': null
+      'company': null
+      'manager': null
       'password': null
 
     validation:
-      'username':
+      'company':
+        required: true
+      'manager':
         required: true
       'password':
         required: true

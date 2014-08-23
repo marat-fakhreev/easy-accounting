@@ -18,12 +18,20 @@ define [
 
     model: Session.currentUser()
 
-    hammerEvents:
-      'tap .submit-button': 'onFormSubmit'
+    ui:
+      submitButton: '.submit-button'
+
+    events:
+      'click @ui.submitButton': 'onFormSubmit'
 
     bindings:
-      'input[name="name"]':
-        observe: 'username'
+      'input[name="company"]':
+        observe: 'company'
+        updateView: false
+        setOptions:
+          validate: true
+      'input[name="manager"]':
+        observe: 'manager'
         updateView: false
         setOptions:
           validate: true

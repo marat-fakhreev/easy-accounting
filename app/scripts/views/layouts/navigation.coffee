@@ -23,10 +23,18 @@ define [
     templateHelpers:
       routes: RoutesHelper
 
-    hammerEvents:
-      'tap .logout': 'onLogOut'
+    ui:
+      logoutButton: '.logout'
+      navButton: '.navigation-button'
+
+    events:
+      'click @ui.logoutButton': 'onLogOut'
+      'click @ui.navButton': 'onHideNavigation'
 
     onLogOut: ->
       if Session.isLoggedIn()
         Vent.trigger('navigation:toggle')
         Session.destroy()
+
+    onHideNavigation: ->
+      Vent.trigger('navigation:hide')

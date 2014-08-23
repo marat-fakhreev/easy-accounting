@@ -23,8 +23,11 @@ define [
       datetimeFromRegion: '#datetime_from_region'
       datetimeToRegion: '#datetime_to_region'
 
-    hammerEvents:
-      'tap .filter-button': 'onFilterReports'
+    ui:
+      filterButton: '.filter-button'
+
+    events:
+      'click @ui.filterButton': 'onFilterReports'
 
     onRender: ->
       @datetimeFromRegion.show(new DatetimeFromView)

@@ -6,8 +6,11 @@ define [
   class HeaderRefreshButtonView extends Marionette.ItemView
     template: JST['templates/header/header_refresh_button']
 
-    hammerEvents:
-      'tap #refresh_menu_button': 'onTapRefreshButton'
+    ui:
+      refreshButton: '#refresh_menu_button'
+
+    events:
+      'click @ui.refreshButton': 'onTapRefreshButton'
 
     onTapRefreshButton: ->
       Backbone.history.loadUrl()

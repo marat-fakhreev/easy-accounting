@@ -5,7 +5,7 @@ define [
   'templates'
 ], (Marionette, ControlsLayoutView, ReportsListView) ->
 
-  class AllReports extends Marionette.LayoutView
+  class AllReportslayout extends Marionette.LayoutView
     className: 'reports-list'
 
     template: JST['templates/layouts/all_reports']

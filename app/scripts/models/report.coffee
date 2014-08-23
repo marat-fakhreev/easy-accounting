@@ -4,3 +4,4 @@ define [
 ], (Backbone, AppModel) ->
 
   class Report extends AppModel
+    urlRoot: 'reports'

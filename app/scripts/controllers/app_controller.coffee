@@ -5,6 +5,7 @@ define [
   'facades/reqres'
   'facades/spinner'
   'collections/reports'
+  'collections/items'
   'views/layouts/layout'
   'views/layouts/header'
   'views/layouts/navigation'
@@ -19,6 +20,7 @@ define [
   ReqRes
   Spinner
   Reports
+  Items
   Layout
   HeaderLayout
   NavigationLayout
@@ -68,9 +70,12 @@ define [
       Spinner.hide()
 
     createReport: ->
+      @items = new Items unless @items
       Vent.trigger('title:change', 'Create Report')
-      @layout.mainRegion.show(new CreateReportLayout)
-      Spinner.hide()
+
+      $.when(@items.fetch()).then =>
+        @layout.mainRegion.show(new CreateReportLayout(collection: @items))
+        Spinner.hide()
 
     createTemplate: ->
       Vent.trigger('title:change', 'Create Template')

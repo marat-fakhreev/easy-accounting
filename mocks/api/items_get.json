@@ -1,0 +1,42 @@
+[
+  {
+    "name": "iPad",
+    "type": "boolean"
+  },
+  {
+    "name": "iPhone",
+    "type": "boolean"
+  },
+  {
+    "name": "iPod",
+    "type": "boolean"
+  },
+  {
+    "name": "iMac",
+    "type": "string"
+  },
+  {
+    "name": "Macbook",
+    "type": "integer"
+  },
+  {
+    "name": "AppleTV",
+    "type": "boolean"
+  },
+  {
+    "name": "Airport_Extreme",
+    "type": "boolean"
+  },
+  {
+    "name": "Airport_Express",
+    "type": "boolean"
+  },
+  {
+    "name": "AirPods",
+    "type": "boolean"
+  },
+  {
+    "name": "MagSafe_2",
+    "type": "integer"
+  }
+]

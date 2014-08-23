@@ -30,16 +30,10 @@ define [
       @router = new Router(controller: @controller)
       Backbone.history.start()
 
-      $(document).on 'tap, click', '*', (event) ->
-        self = $(event.currentTarget)
+      $(document).on 'tap, click', '.js-link', (event) ->
         event.preventDefault()
-
-        $('.popover').each (index, item) ->
-          $(item).removeClass('show-popover') unless $(item).hasClass('js-select-popover')
-
-        if self.hasClass('js-link')
-          href = self.attr('href')
-          App.navigate(href, trigger: true)
+        href = $(event.currentTarget).attr('href')
+        App.navigate(href, trigger: true)
     else
       Notifications.alert('No internet connection')
 

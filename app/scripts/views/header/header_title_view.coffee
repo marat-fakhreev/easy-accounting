@@ -8,11 +8,8 @@ define [
 
     className: 'title-container'
 
-    hammerEvents:
-      'tap #slide_menu_button': 'onClickMenuButton'
+    ui:
+      menuSlideButton: '#slide_menu_button'
 
     templateHelpers: ->
       showTitle: => @options.title
-
-    onClickMenuButton: ->
-      $('body').toggleClass('active')
