@@ -6,7 +6,7 @@ define [
 ], (Marionette, ControlsLayoutView, ReportsListView) ->
 
   class AllReports extends Marionette.LayoutView
-    className: 'reports-container'
+    className: 'reports-list'
 
     template: JST['templates/layouts/all_reports']
 
@@ -15,5 +15,5 @@ define [
       reportsRegion: '#reports_region'
 
     onRender: ->
-      @controlsRegion.show(new ControlsLayoutView)
-      @reportsRegion.show(new ReportsListView)
+      @controlsRegion.show(new ControlsLayoutView(collection: @collection))
+      @reportsRegion.show(new ReportsListView(collection: @collection))

@@ -6,11 +6,31 @@
   height: 23%
 
 .reports
-  overflow: auto
-  -webkit-overflow-scrolling: touch
-  position: absolute
-  box-sizing: border-box
+  scrollBox()
   top: 13.4rem
-  left: 0
-  right: 0
-  bottom: 0
+
+.reports-list
+.topcoat-list__header
+  li
+    clearfix()
+
+    a
+      clearfix()
+      display: block
+      color: $blueColor
+
+  .child-item
+    &.item-id
+      col(4/20)
+
+    &.item-manager
+      col(11/20)
+
+    &.item-date
+      col(5/20)
+
+  .topcoat-list__item
+    padding: 0
+
+    a
+      padding: 1.25rem

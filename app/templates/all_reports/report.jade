@@ -1,0 +1,20 @@
+.report-fields
+  .text-box
+    .key Report ID
+    .value #{id}
+  .text-box
+    .key Date
+    .value #{dates.convertToFormattedDate(created_at)} [#{dates.convertToFormattedTime(created_at)}]
+  .text-box
+    .key Manager
+    .value #{manager}
+
+.items-list
+  .topcoat-list
+    .topcoat-list__header
+      span(class='child-item') Report items
+    ul.topcoat-list__container
+      each value, key in items
+        li.topcoat-list__item
+          div(class='child-item key') #{report.toFormattedString(key)}
+          div(class='child-item value') #{value}

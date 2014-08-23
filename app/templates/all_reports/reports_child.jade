@@ -1,0 +1,6 @@
+a(class='js-link' href=routes.reportPath(id))
+  .child-item
+    div(class='child-item item-id') #{id}
+    div(class='child-item item-manager') #{manager}
+    div(class='child-item item-date')
+      | #{dates.convertToFormattedDate(created_at)} [#{dates.convertToFormattedTime(created_at)}]

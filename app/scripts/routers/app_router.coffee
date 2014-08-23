@@ -9,6 +9,7 @@ define [
     appRoutes:
       '': 'root'
       'all_reports': 'root'
+      'all_reports/:id': 'report'
       'create_report': 'createReport'
       'create_template': 'createTemplate'
 

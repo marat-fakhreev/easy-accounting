@@ -5,7 +5,7 @@ define [
   'templates'
 ], (Marionette, DatetimeBehavior, DatetimeView) ->
 
-  class ReportDatetimeToView extends DatetimeView
+  class ReportsDatetimeToView extends DatetimeView
     behaviors:
       datetime:
         behaviorClass: DatetimeBehavior

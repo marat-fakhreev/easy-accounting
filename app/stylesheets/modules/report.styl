@@ -1,0 +1,38 @@
+.report-fields
+  height: 11.5rem
+
+  .text-box
+    clearfix()
+    border: 1px solid $borderColor
+    margin: 0 0 10px 0
+
+    .key
+      col(1/2)
+      text-align: left
+
+    .value
+      col(1/2)
+      text-align: right
+
+.items-list
+  scrollBox()
+  top: 11.5rem
+  font-size: 18px
+
+  .topcoat-list__header
+    span
+      font-size: 18px
+
+  .topcoat-list__item
+    clearfix()
+    font-size: 18px
+    padding: 0.8rem 1.25rem
+
+  .child-item
+    &.key
+      col(6/10)
+      text-align: left
+
+    &.value
+      col(4/10)
+      text-align: right
