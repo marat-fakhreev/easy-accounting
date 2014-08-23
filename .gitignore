@@ -25,11 +25,19 @@ plugins/*
 www/*
 !www/config.xml
 
+#Android
+
+platforms/android/ant-build
+platforms/android/ant-gen
+platforms/android/CordovaLib/ant-build
+platforms/android/CordovaLib/ant-gen
 platforms/android/assets/www
 !platforms/android/www/cordova.js
 !platforms/android/www/cordova_plugins.js
 !platforms/android/www/phonegap.js
 !platforms/android/www/plugins
+
+#iOS
 
 platforms/ios/www/*
 !platforms/ios/www/cordova.js
