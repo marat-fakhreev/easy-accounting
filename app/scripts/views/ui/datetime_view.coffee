@@ -1,5 +1,6 @@
 define [
   'marionette'
+  'helpers/dates'
   'templates'
 ], (Marionette) ->
 

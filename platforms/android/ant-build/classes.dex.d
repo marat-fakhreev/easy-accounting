@@ -6,6 +6,16 @@
 /Users/Phantom/projects-phonegap/easy-accounting/platforms/android/ant-build/classes/com/easy_accounting/R$string.class \
 /Users/Phantom/projects-phonegap/easy-accounting/platforms/android/ant-build/classes/com/easy_accounting/R$xml.class \
 /Users/Phantom/projects-phonegap/easy-accounting/platforms/android/ant-build/classes/com/easy_accounting/R.class \
+/Users/Phantom/projects-phonegap/easy-accounting/platforms/android/ant-build/classes/com/plugin/datepicker/DatePickerPlugin$1$1.class \
+/Users/Phantom/projects-phonegap/easy-accounting/platforms/android/ant-build/classes/com/plugin/datepicker/DatePickerPlugin$1$2.class \
+/Users/Phantom/projects-phonegap/easy-accounting/platforms/android/ant-build/classes/com/plugin/datepicker/DatePickerPlugin$1.class \
+/Users/Phantom/projects-phonegap/easy-accounting/platforms/android/ant-build/classes/com/plugin/datepicker/DatePickerPlugin$2$1.class \
+/Users/Phantom/projects-phonegap/easy-accounting/platforms/android/ant-build/classes/com/plugin/datepicker/DatePickerPlugin$2$2.class \
+/Users/Phantom/projects-phonegap/easy-accounting/platforms/android/ant-build/classes/com/plugin/datepicker/DatePickerPlugin$2$3.class \
+/Users/Phantom/projects-phonegap/easy-accounting/platforms/android/ant-build/classes/com/plugin/datepicker/DatePickerPlugin$2.class \
+/Users/Phantom/projects-phonegap/easy-accounting/platforms/android/ant-build/classes/com/plugin/datepicker/DatePickerPlugin$DateSetListener.class \
+/Users/Phantom/projects-phonegap/easy-accounting/platforms/android/ant-build/classes/com/plugin/datepicker/DatePickerPlugin$TimeSetListener.class \
+/Users/Phantom/projects-phonegap/easy-accounting/platforms/android/ant-build/classes/com/plugin/datepicker/DatePickerPlugin.class \
 /Users/Phantom/projects-phonegap/easy-accounting/platforms/android/ant-build/classes/org/apache/cordova/camera/CameraLauncher.class \
 /Users/Phantom/projects-phonegap/easy-accounting/platforms/android/ant-build/classes/org/apache/cordova/camera/ExifHelper.class \
 /Users/Phantom/projects-phonegap/easy-accounting/platforms/android/ant-build/classes/org/apache/cordova/camera/FileHelper.class \

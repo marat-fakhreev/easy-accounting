@@ -5,3 +5,4 @@ phonegap plugin add org.apache.cordova.device
 phonegap plugin add org.apache.cordova.dialogs
 phonegap plugin add org.apache.cordova.network-information
 phonegap plugin add https://github.com/whiteoctober/cordova-plugin-app-version.git
+phonegap plugin add https://github.com/VitaliiBlagodir/cordova-plugin-datepicker

@@ -49,6 +49,7 @@
 		23F6DC6F43494B1AAAE1EDA6 /* CDVReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F4229605DE9459099F15507 /* CDVReachability.m */; };
 		423B5D9A2CE44F0F808B67B6 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6F96FEB6E06456E91C7F324 /* SystemConfiguration.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		E75926B078954FC0A622B782 /* AppVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = D1963235F42541A79B46D6B0 /* AppVersion.m */; };
+		4DE410CE629D42ACB043DAE0 /* DatePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 8759146260954551B0E74CDE /* DatePicker.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -132,6 +133,8 @@
 		E6F96FEB6E06456E91C7F324 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "SystemConfiguration.framework"; path = "System/Library/Frameworks/SystemConfiguration.framework"; sourceTree = SDKROOT; fileEncoding = 4; };
 		D1963235F42541A79B46D6B0 /* AppVersion.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "AppVersion.m"; path = "uk.co.whiteoctober.cordova.appversion/AppVersion.m"; sourceTree = "<group>"; fileEncoding = 4; };
 		057434E413174DF7A61C5459 /* AppVersion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "AppVersion.h"; path = "uk.co.whiteoctober.cordova.appversion/AppVersion.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		8759146260954551B0E74CDE /* DatePicker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "DatePicker.m"; path = "com.plugin.datepicker/DatePicker.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		DABE36B18A4F4BF9A21FC97B /* DatePicker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "DatePicker.h"; path = "com.plugin.datepicker/DatePicker.h"; sourceTree = "<group>"; fileEncoding = 4; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -274,6 +277,8 @@
 				2CA7162E9E1A4F5792A0CD75 /* CDVReachability.h */,
 				D1963235F42541A79B46D6B0 /* AppVersion.m */,
 				057434E413174DF7A61C5459 /* AppVersion.h */,
+				8759146260954551B0E74CDE /* DatePicker.m */,
+				DABE36B18A4F4BF9A21FC97B /* DatePicker.h */,
 			);
 			name = Plugins;
 			path = "EasyAccounting/Plugins";
@@ -476,6 +481,7 @@
 				902818F733784A51B6B0856A /* CDVConnection.m in Sources */,
 				23F6DC6F43494B1AAAE1EDA6 /* CDVReachability.m in Sources */,
 				E75926B078954FC0A622B782 /* AppVersion.m in Sources */,
+				4DE410CE629D42ACB043DAE0 /* DatePicker.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

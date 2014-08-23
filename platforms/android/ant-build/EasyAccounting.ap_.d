@@ -37,11 +37,15 @@
 /Users/Phantom/projects-phonegap/easy-accounting/platforms/android/assets/www/plugins \
 /Users/Phantom/projects-phonegap/easy-accounting/platforms/android/assets/www/scripts \
 /Users/Phantom/projects-phonegap/easy-accounting/platforms/android/assets/www/stylesheets \
+/Users/Phantom/projects-phonegap/easy-accounting/platforms/android/assets/www/plugins/com.plugin.datepicker \
 /Users/Phantom/projects-phonegap/easy-accounting/platforms/android/assets/www/plugins/org.apache.cordova.camera \
 /Users/Phantom/projects-phonegap/easy-accounting/platforms/android/assets/www/plugins/org.apache.cordova.device \
 /Users/Phantom/projects-phonegap/easy-accounting/platforms/android/assets/www/plugins/org.apache.cordova.dialogs \
 /Users/Phantom/projects-phonegap/easy-accounting/platforms/android/assets/www/plugins/org.apache.cordova.network-information \
 /Users/Phantom/projects-phonegap/easy-accounting/platforms/android/assets/www/plugins/uk.co.whiteoctober.cordova.appversion \
+/Users/Phantom/projects-phonegap/easy-accounting/platforms/android/assets/www/plugins/com.plugin.datepicker/www \
+/Users/Phantom/projects-phonegap/easy-accounting/platforms/android/assets/www/plugins/com.plugin.datepicker/www/android \
+/Users/Phantom/projects-phonegap/easy-accounting/platforms/android/assets/www/plugins/com.plugin.datepicker/www/android/DatePicker.js \
 /Users/Phantom/projects-phonegap/easy-accounting/platforms/android/assets/www/plugins/org.apache.cordova.camera/www \
 /Users/Phantom/projects-phonegap/easy-accounting/platforms/android/assets/www/plugins/org.apache.cordova.camera/www/Camera.js \
 /Users/Phantom/projects-phonegap/easy-accounting/platforms/android/assets/www/plugins/org.apache.cordova.camera/www/CameraConstants.js \
@@ -816,8 +820,6 @@
 /Users/Phantom/projects-phonegap/easy-accounting/platforms/android/assets/www/scripts/views/login \
 /Users/Phantom/projects-phonegap/easy-accounting/platforms/android/assets/www/scripts/views/ui \
 /Users/Phantom/projects-phonegap/easy-accounting/platforms/android/assets/www/scripts/views/abstract/form_view.js \
-/Users/Phantom/projects-phonegap/easy-accounting/platforms/android/assets/www/scripts/views/all_reports/report_datetime_from_view.js \
-/Users/Phantom/projects-phonegap/easy-accounting/platforms/android/assets/www/scripts/views/all_reports/report_datetime_to_view.js \
 /Users/Phantom/projects-phonegap/easy-accounting/platforms/android/assets/www/scripts/views/all_reports/reports_controls_layout_view.js \
 /Users/Phantom/projects-phonegap/easy-accounting/platforms/android/assets/www/scripts/views/all_reports/reports_datetime_from_view.js \
 /Users/Phantom/projects-phonegap/easy-accounting/platforms/android/assets/www/scripts/views/all_reports/reports_datetime_to_view.js \

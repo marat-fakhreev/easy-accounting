@@ -63,6 +63,13 @@ module.exports = [
         "clobbers": [
             "cordova.getAppVersion"
         ]
+    },
+    {
+        "file": "plugins/com.plugin.datepicker/www/ios/DatePicker.js",
+        "id": "com.plugin.datepicker.DatePicker",
+        "clobbers": [
+            "datePicker"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -72,7 +79,8 @@ module.exports.metadata =
     "org.apache.cordova.device": "0.2.11",
     "org.apache.cordova.dialogs": "0.2.9",
     "org.apache.cordova.network-information": "0.2.11",
-    "uk.co.whiteoctober.cordova.appversion": "0.1.4"
+    "uk.co.whiteoctober.cordova.appversion": "0.1.4",
+    "com.plugin.datepicker": "0.3.0"
 }
 // BOTTOM OF METADATA
 });
