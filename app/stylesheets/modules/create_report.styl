@@ -1,0 +1,49 @@
+.create-items-list
+  scrollBox()
+  top: 4rem
+  bottom: 5.5rem
+  font-size: 18px
+
+  .topcoat-list__header
+    span
+      font-size: 18px
+
+  .topcoat-list__item
+    clearfix()
+    font-size: 18px
+    padding: 0.5rem 1.25rem
+
+  .child-item
+    &.key
+      col(7/10)
+      line-height: 3rem
+      text-align: left
+      font-size: 20px
+      vertical-align: bottom
+
+    &.value
+      col(3/10)
+
+      .topcoat-switch
+      .topcoat-text-input
+        float: right
+
+      .topcoat-text-input
+        width: 6rem
+        margin: 0
+        padding: 0 0.7rem
+
+.submit-button-box
+  position: absolute
+  bottom: 0
+  left: 0
+  right: 0
+  bottom: 1.5rem
+  height: 4rem
+
+  .topcoat-button--cta
+    width: 100%
+    position: absolute
+    bottom: 0
+    left: 0
+    right: 0
