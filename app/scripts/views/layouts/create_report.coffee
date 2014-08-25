@@ -4,7 +4,7 @@ define [
   'facades/spinner'
   'facades/notifications'
   'models/report'
-  'views/create_report/items_view'
+  'views/create_report/create_report_items_view'
   'templates'
 ], (
   Marionette
@@ -12,14 +12,14 @@ define [
   Spinner
   Notifications
   Report
-  ItemsView
+  CreateReportItemsView
 ) ->
 
   class CreateReportLayout extends Marionette.LayoutView
     template: JST['templates/layouts/create_report']
 
     regions:
-      itemlistRegion: '.items-region'
+      itemsListRegion: '.items-region'
 
     ui:
       submitButton: '#submit_button'
@@ -32,7 +32,7 @@ define [
       @model = new Report(items: @collection.getItems())
 
     onRender: ->
-      @itemlistRegion.show(new ItemsView(model: @model))
+      @itemsListRegion.show(new CreateReportItemsView(model: @model))
 
     onSendReport: ->
       Spinner.show()

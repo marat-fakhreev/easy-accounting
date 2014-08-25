@@ -11,6 +11,7 @@ define [
   'views/layouts/navigation'
   'views/layouts/all_reports'
   'views/layouts/create_report'
+  'views/layouts/create_template'
   'views/login/login_view'
   'views/all_reports/report_view'
 ], (
@@ -26,12 +27,15 @@ define [
   NavigationLayout
   AllReportsLayout
   CreateReportLayout
+  CreateTemplateLayout
   LoginView
   ReportView
 ) ->
 
   class AppController extends Marionette.Controller
     initialize: ->
+      @items = new Items
+      @reports = new Reports
       @layout = new Layout
       @layout.render()
       Spinner.init()
@@ -50,10 +54,12 @@ define [
     root: ->
       if Session.isLoggedIn()
         Vent.trigger('title:change', 'Reports')
-        @reports = new Reports unless @reports
 
         if @reports.length is 0
-          $.when(@reports.fetch(data: @reports.filterObject)).then =>
+          $.when(
+            @reports.fetch(data: @reports.filterObject)
+            @items.fetch()
+          ).then =>
             @layout.mainRegion.show(new AllReportsLayout(collection: @reports))
             Spinner.hide()
         else
@@ -70,14 +76,11 @@ define [
       Spinner.hide()
 
     createReport: ->
-      @items = new Items unless @items
       Vent.trigger('title:change', 'Create Report')
-
-      $.when(@items.fetch()).then =>
-        @layout.mainRegion.show(new CreateReportLayout(collection: @items))
-        Spinner.hide()
+      @layout.mainRegion.show(new CreateReportLayout(collection: @items))
+      Spinner.hide()
 
     createTemplate: ->
       Vent.trigger('title:change', 'Create Template')
-      @layout.mainRegion.empty()
+      @layout.mainRegion.show(new CreateTemplateLayout(collection: @items))
       Spinner.hide()

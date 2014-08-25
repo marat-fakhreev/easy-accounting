@@ -4,12 +4,12 @@ define [
   'templates'
   ], (Marionette, Vent) ->
 
-  class ItemsView extends Marionette.ItemView
+  class CreateReportItemsView extends Marionette.ItemView
     tagName: 'ul'
 
     className: 'topcoat-list__container'
 
-    template: JST['templates/create_report/items']
+    template: JST['templates/create_report/create_report_items']
 
     ui:
       switch: '.topcoat-switch'
