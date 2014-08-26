@@ -1,42 +1,21 @@
 .item-inner
-  div(class='child-item type')
-    .circle.boolean
-      label(class='topcoat-switch')
-        input(type='checkbox' class='topcoat-switch__input' checked)
-        .topcoat-switch__toggle
-  div(class='child-item name')
-    | iPhone
-  i(class='fa fa-times f-icon')
-  i(class='fa fa-pencil-square-o f-icon')
+  div(class='child-item item-type')
+    .circle-wrapper
+      if type === 'boolean'
+        .circle.boolean
+          label(class='topcoat-switch')
+            input(type='checkbox' class='topcoat-switch__input' checked)
+            .topcoat-switch__toggle
+      else if type === 'integer'
+        .circle.integer
+          input(type='text' class='topcoat-text-input' value='46')
+      else if type === 'string'
+        .circle.string
+          input(type='text' class='topcoat-text-input' value='reserved')
+  div(class='child-item item-name') #{name}
+  i(class='fa fa-times f-icon delete-button')
+  i(class='fa fa-pencil-square-o f-icon edit-button')
 
-.edit-item-region
+.create-item
   .text-box
-    .create-new-item-region
-      .add-item-box
-        .row
-          .desc
-            span.desc-name
-              | Write the name for new item
-          .types
-            input(type='text' class='topcoat-text-input item-name-input' placeholder='for example: Screwdriver')
-        .row
-          .desc
-            span.desc-types
-              | Choose the type for new item
-              br
-              | ( YES/NO | Count | Text )
-          .types
-            .circles-box
-              .circle-wrapper
-                .circle.boolean.active
-                  label(class='topcoat-switch')
-                    input(type='checkbox' class='topcoat-switch__input' checked)
-                    .topcoat-switch__toggle
-              .circle-wrapper
-                .circle.integer
-                  input(type='text' class='topcoat-text-input' value='46')
-              .circle-wrapper
-                .circle.string
-                  input(type='text' class='topcoat-text-input' value='reserved')
-        .row
-          button(class="topcoat-button--cta submit-button") Save new item
+    .item-form-region

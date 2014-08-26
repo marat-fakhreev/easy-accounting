@@ -1,0 +1,28 @@
+.row
+  .desc
+    span.desc-name
+      | Edit the name
+  .types
+    input(type='text' class='topcoat-text-input item-name-input' value='#{name}')
+.row
+  .desc
+    span.desc-types
+      | Choose the type for your item
+      br
+      | ( YES/NO | Count | Text )
+  .types
+    .circles-box
+      - console.log(type)
+      .circle-wrapper
+        div(class=type === 'boolean' ? 'circle boolean active' : 'circle boolean' data-type='boolean')
+          label(class='topcoat-switch')
+            input(type='checkbox' class='topcoat-switch__input' checked)
+            .topcoat-switch__toggle
+      .circle-wrapper
+        div(class=type === 'integer' ? 'circle integer active' : 'circle integer' data-type='integer')
+          input(type='text' class='topcoat-text-input' value='46')
+      .circle-wrapper
+        div(class=type === 'string' ? 'circle string active' : 'circle string' data-type='string')
+          input(type='text' class='topcoat-text-input' value='reserved')
+.row
+  button(class="topcoat-button--cta submit-button") Save changes

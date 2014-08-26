@@ -40,6 +40,8 @@ define [
 
     onErrorHandler: (model, error) ->
       if ERRORS.some((element) -> element is error.status)
+        error = error.responseJSON
+        error = 'Server error' unless error
         Notifications.error(_.values(error.responseJSON)[0])
       else
         Notifications.error('Server error')

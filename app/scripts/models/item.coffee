@@ -4,3 +4,4 @@ define [
 ], (Backbone, AppModel) ->
 
   class Item extends AppModel
+    urlRoot: 'items'

@@ -8,12 +8,16 @@ define [
 
     model: Item
 
+    comparator: (model) ->
+      model.get('name')
+
     getItems: ->
       items = {}
 
       _.each @models, (model, index) ->
         type = model.get('type')
         name = model.get('name')
+
         switch type
           when 'boolean' then items[name] = false
           when 'integer' then items[name] = 0
