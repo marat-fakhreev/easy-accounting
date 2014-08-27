@@ -45,3 +45,19 @@ module.exports = (grunt) ->
         'requirejs:production'
         'clean:production'
       ]
+    else if target is 'desktop'
+      grunt.task.run [
+        'shell:install'
+        'clean:development'
+        'copy:development'
+        'jade:desktop'
+        'jade:jst'
+        'stylus:development'
+        'coffee:development'
+        'coffeelint:development'
+        'jsonlint:development'
+        'replace:desktop'
+        'cssmin:production'
+        'requirejs:production'
+        'clean:production'
+      ]

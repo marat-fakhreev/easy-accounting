@@ -15,6 +15,15 @@ module.exports = (grunt) ->
     files: [
       '<%= grunt.publicDir %>/index.html': ['<%= grunt.appDir %>/index.jade']
     ]
+  desktop:
+    options:
+      pretty: true
+      client: false
+      data:
+        desktop: true
+    files: [
+      '<%= grunt.publicDir %>/index.html': ['<%= grunt.appDir %>/index.jade']
+    ]
   jst:
     options:
       pretty: false

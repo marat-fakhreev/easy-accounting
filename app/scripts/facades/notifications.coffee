@@ -1,14 +1,25 @@
-define ->
+define [
+  'settings/settings'
+], (Settings) ->
 
   class Notifications
     @alert: (message, callback) ->
-      navigator.notification.alert(message, @onCallback(callback), 'GGR Fleet Manager', 'OK')
+      if Settings.getPlatform() is 'desktop'
+        alert(message)
+      else
+        navigator.notification.alert(message, @onCallback(callback), 'GGR Fleet Manager', 'OK')
 
     @error: (message, callback) ->
-      navigator.notification.alert(message, @onCallback(callback), 'Oops', 'OK')
+      if Settings.getPlatform() is 'desktop'
+        alert(message)
+      else
+        navigator.notification.alert(message, @onCallback(callback), 'Oops', 'OK')
 
     @confirm: (message, callback) ->
-      navigator.notification.confirm(message, @onCallback(callback), 'GGR Fleet Manager', 'Yes, No')
+      if Settings.getPlatform() is 'desktop'
+        alert(message)
+      else
+        navigator.notification.confirm(message, @onCallback(callback), 'GGR Fleet Manager', 'Yes, No')
 
     @onCallback: (callback, value) ->
       if callback?

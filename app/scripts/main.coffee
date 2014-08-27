@@ -1,4 +1,10 @@
 require ['config'], ->
-  require ['application'], (App) ->
+  require [
+    'settings/settings'
+    'application'
+  ], (Settings, App) ->
 
-    document.addEventListener('deviceready', (-> App.start()), false)
+    if Settings.getPlatform() is 'desktop'
+      App.start()
+    else
+      document.addEventListener('deviceready', (-> App.start()), false)

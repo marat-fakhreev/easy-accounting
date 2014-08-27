@@ -8,7 +8,9 @@ html.no-js
     meta(name='apple-mobile-web-app-status-bar-style', content='black')
 
     link(rel='stylesheet' href='stylesheets/style.css')
-    script(type='text/javascript', src='cordova.js')
+
+    unless desktop
+      script(type='text/javascript', src='cordova.js')
 
     if development
       script(type='text/javascript', data-main='scripts/main', src='scripts/bower_components/requirejs/require.js')

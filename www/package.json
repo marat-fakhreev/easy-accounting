@@ -7,8 +7,12 @@
     "title": "EasyAccounting",
     "icon": "icon.png",
     "frame": false,
+    "min-width": 800,
+    "min-height": 500,
     "width": 800,
-    "height": 700
+    "height": 700,
+    "max-width": 1000,
+    "max-height": 1200
   },
   "webkit": {
     "plugin": true

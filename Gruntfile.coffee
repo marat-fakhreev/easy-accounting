@@ -24,9 +24,10 @@ module.exports = (grunt) ->
   ]
 
   grunt.registerTask 'desktop', [
-    'build:staging'
+    'build:desktop'
     'clean:desktop'
     'nodewebkit:desktop'
+    'server:development'
   ]
 
   grunt.registerTask 'default', [

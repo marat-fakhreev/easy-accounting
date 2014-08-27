@@ -35,3 +35,15 @@ module.exports = (grunt) ->
       src: ['<%= grunt.publicDir %>/scripts/settings/settings.js']
       dest: '<%= grunt.publicDir %>/scripts/settings/'
     ]
+  desktop:
+    options:
+      patterns: [
+        match: 'desktop'
+        replacement: 'staging'
+      ]
+    files: [
+      expand: true
+      flatten: true
+      src: ['<%= grunt.publicDir %>/scripts/settings/settings.js']
+      dest: '<%= grunt.publicDir %>/scripts/settings/'
+    ]
