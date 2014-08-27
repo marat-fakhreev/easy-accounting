@@ -21,6 +21,7 @@
     "grunt-shell": "~0.6.4",
     "grunt-notify": "~0.2.20",
     "grunt-karma": "~0.8.3",
+    "grunt-node-webkit-builder": "~0.2.2",
     "load-grunt-config": "~0.7.2",
     "autoprefixer-stylus": "~0.1.0",
     "requirejs": "~2.1.14",

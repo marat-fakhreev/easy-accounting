@@ -13,6 +13,7 @@ module.exports = (grunt) ->
   grunt.iosDir = 'platforms/ios/www'
   grunt.androidDir = 'platforms/android/assets/www'
   grunt.testDir = 'specs'
+  grunt.nodeWebkitDir = 'webkitbuilds'
 
   require('load-grunt-config')(grunt)
 
@@ -20,6 +21,12 @@ module.exports = (grunt) ->
     'build:development'
     'copy:ios'
     'server:development'
+  ]
+
+  grunt.registerTask 'desktop', [
+    'build:staging'
+    'clean:desktop'
+    'nodewebkit:desktop'
   ]
 
   grunt.registerTask 'default', [

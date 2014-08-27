@@ -25,6 +25,12 @@ plugins/*
 www/*
 !www/config.xml
 
+#Desktop
+
+cache
+webkitbuilds/*
+!www/package.json
+
 #Android
 
 platforms/android/ant-build
