@@ -2,11 +2,11 @@ define ->
 
   class Settings
     # set global envorinment for API
-    ENVIRONMENT = 'desktop'
+    ENVIRONMENT = 'local'
 
     local =
       port: 8001
-      url: 'http://10.0.1.22' #use your local IP address
+      url: 'http://localhost' #use your local IP address
       api: 'api'
       platform: 'mobile'
 

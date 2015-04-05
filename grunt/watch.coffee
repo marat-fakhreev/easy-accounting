@@ -16,6 +16,10 @@ module.exports = (grunt) ->
       file[dest] = "#{grunt.appDir}/templates/**/*.jade"
       grunt.config 'jade.watch.files', file
 
+    dest = filepath.replace("#{grunt.publicDir}", "#{grunt.iosDir}")
+    file[dest] = filepath
+    grunt.config 'copy.watch.files', file
+
   options:
     livereload: true
     spawn: false

@@ -68,7 +68,8 @@ DatePicker.prototype.show = function(options, cb) {
         cancelButtonLabel: 'Cancel',
         cancelButtonColor: '#000000',
         x: '0',
-        y: '0'
+        y: '0',
+        minuteInterval: 1
     };
 
     for (var key in defaults) {
@@ -91,6 +92,13 @@ DatePicker.prototype._dateSelected = function(date) {
         this._callback(d);
 }
 
+DatePicker.prototype._dateSelectionCanceled = function() {
+    if (this._callback)
+        this._callback();
+}
+
+
+
 var datePicker = new DatePicker();
 module.exports = datePicker;
 
@@ -101,4 +109,5 @@ if (!window.plugins) {
 if (!window.plugins.datePicker) {
     window.plugins.datePicker = datePicker;
 }
+
 });

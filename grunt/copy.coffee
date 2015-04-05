@@ -15,3 +15,5 @@ module.exports = (grunt) ->
     files: [
       { expand: true, cwd: '<%= grunt.publicDir %>', dest: '<%= grunt.androidDir %>', src: '**' }
     ]
+  watch:
+    files: {}

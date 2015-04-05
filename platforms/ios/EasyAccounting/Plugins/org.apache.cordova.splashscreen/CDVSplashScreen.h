@@ -6,9 +6,9 @@
  to you under the Apache License, Version 2.0 (the
  "License"); you may not use this file except in compliance
  with the License.  You may obtain a copy of the License at
- 
+
  http://www.apache.org/licenses/LICENSE-2.0
- 
+
  Unless required by applicable law or agreed to in writing,
  software distributed under the License is distributed on an
  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
@@ -17,12 +17,27 @@
  under the License.
  */
 
+#import <Foundation/Foundation.h>
+#import <Cordova/CDVPlugin.h>
 
-// controller title for Videos
-"Videos title" = "Videos";
-// accessibility label for recording button
-"toggle audio recording" = "starten/beenden der Tonaufnahme";
-// notification spoken by VoiceOver when timed recording finishes
-"timed recording complete" = "programmierte Aufnahme beendet";
-// accessibility hint for display of recorded elapsed time
-"recorded time in minutes and seconds" = "aufgenommene Zeit in Minuten und Sekunden";
+typedef struct {
+    BOOL iPhone;
+    BOOL iPad;
+    BOOL iPhone5;
+    BOOL iPhone6;
+    BOOL iPhone6Plus;
+    BOOL retina;
+    
+} CDV_iOSDevice;
+
+@interface CDVSplashScreen : CDVPlugin {
+    UIActivityIndicatorView* _activityView;
+    UIImageView* _imageView;
+    NSString* _curImageName;
+    BOOL _visible;
+}
+
+- (void)show:(CDVInvokedUrlCommand*)command;
+- (void)hide:(CDVInvokedUrlCommand*)command;
+
+@end
